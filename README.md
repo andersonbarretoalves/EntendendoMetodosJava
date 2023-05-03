@@ -20,14 +20,14 @@
 * **Corpo:** código que possui ou vazio.
 
 **Exemplos:**<br>
-public String getNome(){...}<br>
-public double calcularTotalNota(){...}<br>
-public int verificarDistancia(int coordenada1, int coordenada2) {...}<br>
-public abstract void executar();<br>
-public void alterarFabricante(Fabricante fabricante) {...}<br>
-public Relatorio GerarDadosAnaliticos(Cliente cliente, List<Compra> compras) {...}<br>
+`public String getNome(){...}`<br>
+`public double calcularTotalNota(){...}`<br>
+`public int verificarDistancia(int coordenada1, int coordenada2) {...}`<br>
+`public abstract void executar();`<br>
+`public void alterarFabricante(Fabricante fabricante) {...}`<br>
+`public Relatorio GerarDadosAnaliticos(Cliente cliente, List<Compra> compras) {...}`<br>
 
-public static R N(P) {...}
+`public static R N(P) {...}`
 
 ---
 
@@ -35,10 +35,10 @@ public static R N(P) {...}
 passa-se uma mensagem através de uma classe ou objeto.
 
 **Exemplos:**<br>
-nome_da_classe.nome_do_metodo(); ou nome_da_classe.nome_do_metodo(...);
-nome_do_objeto.nome_do_metodo(); ou nome_do_objeto.nome_do_metodo(...);
-math.random(); ou Math.sqrt(4);
-usuario.getEmail(); ou usuario.alterarEndereco(endereco); 
+`nome_da_classe.nome_do_metodo(); ou nome_da_classe.nome_do_metodo(...);`
+`nome_do_objeto.nome_do_metodo(); ou nome_do_objeto.nome_do_metodo(...);`<br>
+`math.random(); ou Math.sqrt(4);`<br>
+`usuario.getEmail(); ou usuario.alterarEndereco(endereco);`
 
 ---
 
@@ -47,9 +47,9 @@ usuario.getEmail(); ou usuario.alterarEndereco(endereco);
 * **Assinatura:** é a forma de identificar unicamente o método.<br>
     Ass = nome + parâmetros<br>
 **Métodos:**<br>
-    public double calcularTotalVenda(double precoItem1, double precoItem2, double precoItem3){...}<br>
+    `public double calcularTotalVenda(double precoItem1, double precoItem2, double precoItem3){...}`<br>
 **Assinatura:**<br>
-calcularTotalVenda (double precoItem1, double precoItem2, double precoItem3)
+`calcularTotalVenda(double precoItem1, double precoItem2, double precoItem3)`
 * **Contrutor e Destrutor:** são métodos especiais usados na Orientação a Objetos.
 * **Mensagem:** é o ato de solicitar ao método que o mesmo execute. Esta pode ser direcionada a um objeto ou a uma classe.
 * Passagem de parâmetros:
@@ -69,9 +69,28 @@ calcularTotalVenda (double precoItem1, double precoItem2, double precoItem3)
 * Nomes devem ser descritivos, mas curtos
   * Notação camelo<br>
   **Exemplos:**<br>
-verificarSaldo();<br>
-executarTransferencia(...);<br>
-ExisteDebito();
+`verificarSaldo();`<br>
+`executarTransferencia(...);`<br>
+`ExisteDebito();`
   * Deve possuir entre 80 e 120 linhas
   * Evite lista de parâmetros longas
   * Visibilidades adequadas
+
+---
+## Sobrecarga
+
+**Conceito:** é a capacidade de definir métodos para diferentes contextos, mas preservando seu nome.
+
+**Exemplo:**<br>
+Alterar a assinatura do método: Ass = nome + parâmetro.<br>
+` ConverterParaInteiro(float f);`<br>
+` ConverterParaInteiro(double d);`<br>
+` ConverterParaInteiro(String s);`<br>
+` ConverterParaInteiro(float f, RoundType rd);`<br>
+` ConverterParaInteiro(double d, RoundType rd);`<br>
+` ConverterParaInteiro(String s, RoundType rd);`
+
+`ConverterParaInteiro(RoundType rd, String s);`<br>
+`ConverterParaInteiro();`
+
+   
