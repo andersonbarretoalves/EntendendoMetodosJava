@@ -93,4 +93,21 @@ Alterar a assinatura do método: Ass = nome + parâmetro.<br>
 `ConverterParaInteiro(RoundType rd, String s);`<br>
 `ConverterParaInteiro();`
 
-   
+## Retornos
+
+**Funcionamento**<br>
+O método executa o seu retorno quando:<br>
+* Completa todas suas instruções internas
+* Chega a uma declaração explicita de retorno.
+* Lança uma Exceção.
+
+**Exemplos:**<br>
+`Public String getMesagem(){
+  return "Ola!";}`<br>
+`public double getJuros({
+  return 2.36}`<br>
+`public vooid executar(){
+  ...
+  return;
+  ...}`
+
